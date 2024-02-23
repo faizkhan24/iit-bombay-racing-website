@@ -1,0 +1,73 @@
+.App{
+  /* background-color: black; */
+
+
+}
+body{
+  /* background-color: black; */
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.image:hover{
+  transform: scale(1);
+  cursor: pointer;
+
+}
+
+
+#slider {
+	overflow: hidden;
+    position: relative;
+    /* width: 1680px; */
+    margin: 0 auto;
+}
+
+@keyframes slider {
+	0% { left: 0; }
+	30% { left: 0; }
+	33% { left: -100%; }
+	63% { left: -100%; }
+	66% { left: -200%; }
+	95% { left: -200%; }
+	100% { left: 0; }
+}
+#slider figure {
+	width:300%;
+	position: relative;
+	animation: 12s slider infinite;
+}
+
+#slider figure:hover {
+	animation-play-state: paused; 
+}
+#slider figure img {
+	width: 33.333333333%;
+	height : 100%;
+	float: left;
+}
+
+.card-border {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-border:hover {
+  transform: scale(1.05); /* You can adjust the scale factor as needed */
+}
+
+
+@media (max-width: 1200px)   {
+
+.cards{
+ width: fit-content;
+ position: relative;
+ left: -5%;
+
+}
+.hero-img{
+  position: relative;
+  left: 30%;
+
+  width: 100%;
+}
+}
